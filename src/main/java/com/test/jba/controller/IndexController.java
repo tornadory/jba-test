@@ -8,8 +8,8 @@ public class IndexController {
 
 	@RequestMapping("/index")
 	public String index(){
-		System.out.print("try to go to index");
-		//return "/WEB-INF/jsp/index.jsp";
+		//System.out.print("try to go to index");
+		//return "/WEB-INF/jsp/index-new.jsp";
 		return "index";
 	}
 }
