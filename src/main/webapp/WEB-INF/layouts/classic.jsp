@@ -29,7 +29,8 @@
 	<%@ taglib uri="http://tiles.apache.org/tags-tiles-extras"
 		prefix="tilesx"%>
 	<tilesx:useAttribute name="current" />
-	<!-- users: ${users} -->
+    <%-- 	current: ${current} --%>	
+    <!-- users: ${users} -->
 	<!-- user: ${user} -->
 
 	<div class="container">
@@ -51,6 +52,10 @@
 						href='<spring:url value="/" />'>Home</a></li>
 					<li class="${current == 'users' ? 'active' : ''}"><a
 						href='<spring:url value="/users.html" />'>Users</a></li>
+					<li class="${current == 'user-register' ? 'active' : ''}"><a
+						href='<spring:url value="/register.html" />'>Register</a></li>
+					<li class="${current == 'login' ? 'active' : ''}"><a
+						href='<spring:url value="/login.html" />'>Login</a></li>
 				</ul>
 			</div>
 			<!--/.nav-collapse -->
@@ -60,7 +65,9 @@
 		<tiles:insertAttribute name="body" />
 
 		<br> <br>
+		<center>
 			<tiles:insertAttribute name="footer" />
+		</center>
 	</div>
 </body>
 </html>
