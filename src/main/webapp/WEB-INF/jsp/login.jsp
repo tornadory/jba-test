@@ -43,7 +43,7 @@
 }
 </style>
 
-<form class="form-signin" role="form" action="/j_spring_security_check"
+<form class="form-signin" role="form" action="/java-blog-aggregator/j_spring_security_check"
 	method="POST">
 	<h2 class="form-signin-heading">Please sign in</h2>
 	<label class="sr-only">Email address</label> 
