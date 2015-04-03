@@ -43,6 +43,7 @@
 }
 </style>
 
+<!-- notice: action path must be right -->
 <form class="form-signin" role="form" action="/java-blog-aggregator/j_spring_security_check"
 	method="POST">
 	<h2 class="form-signin-heading">Please sign in</h2>
