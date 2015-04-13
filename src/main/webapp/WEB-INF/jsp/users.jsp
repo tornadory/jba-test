@@ -14,6 +14,7 @@
 		<thead>
 			<tr>
 				<th>user name</th> <!-- users传不过来 问题解决-->
+				<th>operations</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -21,6 +22,8 @@
 				<tr>
 					<td> <a href="<spring:url value='/users/${user.id}.html' />">
 							${user.name} </a></td>
+					<td> <a href="<spring:url value='/users/remove/${user.id}.html' />" class="btn btn-danger">
+							Remove </a></td>
 				</tr>
 			</c:forEach>
 		</tbody>

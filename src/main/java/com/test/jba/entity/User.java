@@ -2,6 +2,7 @@ package com.test.jba.entity;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -37,7 +38,7 @@ public class User {
 	@JoinTable
 	private List<Role> roles;
 	
-	@OneToMany(mappedBy="user") //by default: fetch=FetchType.LAZY
+	@OneToMany(mappedBy="user", cascade=CascadeType.REMOVE) //by default: fetch=FetchType.LAZY
 	private List<Blog> blogs;
 
 	public List<Role> getRoles() {
