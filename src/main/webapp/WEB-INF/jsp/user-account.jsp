@@ -119,15 +119,24 @@ Web容器默认isELIgnored＝"false"。
 				<table class="table table-bordered table-hover table-striped">
 					<thead>
 						<tr>
-							<th>Title</th>
-							<th>Link</th>
+							<th>date</th>
+							<th>item</th>
 						</tr>
 					</thead>
 					<tbody>
 						<c:forEach items="${blog.items}" var="item">
 							<tr>
-								<td><c:out value="${item.title}" /></td>
-								<td><c:out value="${item.link}" /></td>
+								<td><c:out value="${item.publishedDate}" /></td>
+								<td>
+								<strong>
+								<a href="<c:out value="${item.link}" />" target="_blank" >
+									<c:out value="${item.title}" />
+								</a>
+								</strong>
+								<br/>
+								<%-- <c:out value="${item.description}" /> --%>
+								${item.description}
+								</td>
 							</tr>
 						</c:forEach>
 					</tbody>

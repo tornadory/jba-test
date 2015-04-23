@@ -28,6 +28,33 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.7.0_55/jre/lib/ext/access-bridge-64.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.7.0_55/jre/lib/ext/dnsns.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.7.0_55/jre/lib/ext/jaccess.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.7.0_55/jre/lib/ext/localedata.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.7.0_55/jre/lib/ext/sunec.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.7.0_55/jre/lib/ext/sunjce_provider.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.7.0_55/jre/lib/ext/sunmscapi.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.7.0_55/jre/lib/ext/zipfs.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.7.0_55/lib/ant-javafx.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.7.0_55/lib/dt.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.7.0_55/lib/javafx-doclet.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.7.0_55/lib/javafx-mx.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.7.0_55/lib/jconsole.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.7.0_55/lib/sa-jdi.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.7.0_55/lib/tools.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.7.0_55/jre/lib/alt-rt.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.7.0_55/jre/lib/charsets.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.7.0_55/jre/lib/deploy.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.7.0_55/jre/lib/javaws.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.7.0_55/jre/lib/jce.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.7.0_55/jre/lib/jfr.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.7.0_55/jre/lib/jfxrt.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.7.0_55/jre/lib/jsse.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.7.0_55/jre/lib/management-agent.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.7.0_55/jre/lib/plugin.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.7.0_55/jre/lib/resources.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.7.0_55/jre/lib/rt.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>

@@ -7,7 +7,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
+
+import org.hibernate.annotations.Type;
 
 @Entity
 public class Item {
@@ -15,18 +18,25 @@ public class Item {
 	@Id
 	@GeneratedValue
 	private Integer id;
-	
+
+	@Column(length = 10000)
 	private String title;
-	
+
+	@Lob
+	@Type(type = "org.hibernate.type.StringClobType")
+	@Column(length = Integer.MAX_VALUE)
 	private String description;
-	
-	@Column(name="published_date")
+
+	@Column(length = 10000)
+	private String link;
+
+	@Column(name = "published_date")
 	private Date publishedDate;
-	
+
 	@ManyToOne
-	@JoinColumn(name="blog_id")
+	@JoinColumn(name = "blog_id")
 	private Blog blog;
-	
+
 	public Blog getBlog() {
 		return blog;
 	}
@@ -74,6 +84,4 @@ public class Item {
 	public void setLink(String link) {
 		this.link = link;
 	}
-
-	private String link;
 }
