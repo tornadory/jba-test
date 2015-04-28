@@ -26,10 +26,14 @@ public class RssServiceTest {
 		//fail("Not yet implemented");
 		//List<Item> items = rssService.getItems(new File("test-rss/test.xml"));
 		List<Item> items = rssService.getItems("http://scripting.com/rss.xml");
+		//List<Item> items = rssService.getItems("http://www.tomcatexpert.com/blog/feed");
+		
 		assertEquals(25, items.size());
 		Item firstItem = items.get(0);
-		assertEquals("Imagine all the people", firstItem.getTitle());
-		assertEquals("23 04 2015 10:39:07", new SimpleDateFormat("dd MM yyyy HH:mm:ss").format(firstItem.getPublishedDate()));
+		assertEquals("Great \"Blue Sky\" platforms", firstItem.getTitle()); //当地址为网址时注意内容会变化
+		//assertEquals("Imagine all the people", firstItem.getTitle());
+		//assertEquals("23 04 2015 10:39:07", new SimpleDateFormat("dd MM yyyy HH:mm:ss").format(firstItem.getPublishedDate()));
+		assertEquals("27 04 2015 14:16:21", new SimpleDateFormat("dd MM yyyy HH:mm:ss").format(firstItem.getPublishedDate()));
 	}
 
 }
